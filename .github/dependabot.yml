@@ -1,0 +1,11 @@
+version: 2
+updates:
+- package-ecosystem: composer
+  directory: "/"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: facebook/facebook-instant-articles-sdk-extensions-in-php
+    versions:
+    - "< 1, > 0.1.1"
